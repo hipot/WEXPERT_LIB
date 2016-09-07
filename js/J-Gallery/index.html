@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	  	<meta http-equiv="Content-Type" content="text/html" />
+		<title>Баннеры</title>
+		<script src="jquery-1.4.2.js" type="text/javascript"></script>
+		<script src="jquery.autolist.js" type="text/javascript"></script>
+	</head>
+	<body>
+	<style>
+		body {text-align:center;}
+		.main_view {position:relative;}
+		.listener {position:relative; top:50px; height:304px; width:906px; overflow: hidden; margin:0 auto;}
+		.img_box {position:absolute; top:0; left:0;}
+		.img_box div {display:none; position:absolute; }
+		.img_box div img {border:none;}
+
+		.paging	{position:absolute; left:5px; bottom:6px; height:20px; z-index:10;}
+		.paging > div {float:left; width:20px; height:20px; margin-right:5px; border:1px solid red; background:white; cursor:pointer;}
+		.paging > div.active {background:red;}
+		.stop, .play {position:absolute; top:10px; left:10px; width:20px; height:20px; border:1px solid red; background:#fff; z-index:100; cursor:pointer;}
+		.play {background:red;}
+		.link {position:absolute; left:33px; top:17px; width:87px; height:29px; text-align:center; background:red; line-height:24px; font-weight:normal; font-size:13px; text-decoration:none; text-shadow:#943033 1px -1px 0; color:#fff; z-index:10;}
+	</style>
+	<script>
+	$(function(){
+		$(".main_view .listener").autolist({link:true});
+
+	});
+	</script>
+		<div class="main_view">
+			<div class="listener">
+				<a class="link" href="#">Подробнее</a>
+				<div class="paging">
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+					<div>5</div>
+
+				</div><div class="stop"></div>
+				<div class="img_box">
+					<div><img link="http://google.ru" src="img1.jpg" alt="" /></div>
+					<div><img link="http://mail.ru" src="img2.jpg" alt="" /></div>
+					<div><img link="http://rambler.ru" src="img3.jpg" alt="" /></div>
+					<div><img link="http://render.ru" src="img4.jpg" alt="" /></div>
+					<div><img link="http://render.ru" src="img4.jpg" alt="" /></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

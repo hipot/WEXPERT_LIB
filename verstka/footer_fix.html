@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>footer fix backgrounds</title>    
+ 
+    <style type="text/css">
+        body {padding:0px; margin:0px;}
+        /** обязательно для прижатого подвала */
+        body, html {height:100%;}
+ 
+        /** footer fix **/
+        /** предположим что у нас страница фикс на 1000px, поэтому тут выставляем ширину
+        и делаем макет страницы по центру браузера */
+        .fixer {margin:0px auto; width:1000px; text-align:left;}
+ 
+        #all_content {height:auto !important; height:100%; min-height:100%;}
+        /** ставим паддинг снизу
+        на 100px (высота подвала, чтобы подвал не налазил)
+        +
+        60px (необходимое расстояние между подвалом и содержимым страницы) = 160px */
+        #all_content .fixer {padding:0px 0px 160px 0px;}
+ 
+        /** поднимаем футер на 100px вверх (т.к. высота подвала 100px) */
+        #footer_pos {height:100px; margin-top:-100px; width:auto;}
+        #footer_pos .fixer {}
+		
+		
+		
+		/** фоны разные для разных частей */
+		body {background:#099; color:#fff;}
+		#all_content, #footer_pos {margin-left:auto; margin-right:auto; width:1000px;}
+		#all_content {background:#060;}
+		#footer_pos {background:#F90;}
+    </style>
+</head>
+ 
+<body>
+    <div id="all_content">
+        <div class="fixer">
+ 
+            content
+ 
+        </div><!-- fixer -->
+    </div><!-- all_content -->
+ 
+    <div id="footer_pos">
+        <div class="fixer">
+ 
+            footer
+ 
+        </div><!-- fixer -->
+    </div><!-- footer_pos -->
+ 
+</body>
+</html>

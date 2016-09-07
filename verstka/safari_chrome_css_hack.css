@@ -1,0 +1,9 @@
+/* не работает */
+body:nth-of-type(1) #columns {
+	margin-bottom:160px;	
+}
+
+/* работает */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.class { }
+}

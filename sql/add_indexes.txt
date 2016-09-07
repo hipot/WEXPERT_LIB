@@ -1,0 +1,5 @@
+ALTER TABLE we_doc_generate_link MODIFY UF_DOC_NUM varchar(150);
+ALTER TABLE we_doc_generate_link MODIFY UF_CHECKWORD varchar(20);
+
+CREATE INDEX IDX_DN_CW ON we_doc_generate_link (UF_DOC_NUM, UF_CHECKWORD);
+CREATE INDEX IDX_UF_USER_ID ON we_doc_generate_link (UF_USER_ID);

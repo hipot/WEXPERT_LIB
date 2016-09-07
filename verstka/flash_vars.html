@@ -1,0 +1,12 @@
+/*read flashvars AS3*/
+var php_api_search_url:String = "/php_interface/api_search.php";
+var paramObj:Object = LoaderInfo(root.loaderInfo).parameters;
+if (paramObj["path_api"] && paramObj["path_api"] != "") {
+	php_api_search_url = paramObj["path_api"];
+}
+
+
+/*set FlashVars*/
+<param name="FlashVars" value="path_api=/php_interface/api_search.php" />
+<embed FlashVars="path_api=/php_interface/api_search.php"></embed>
+

@@ -1,0 +1,3 @@
+SHOW CREATE TABLE b_iblock_element_prop_s16;
+ALTER TABLE `b_iblock_element_prop_s16` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE `b_lang` CHANGE `SITE_NAME` `SITE_NAME` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL 

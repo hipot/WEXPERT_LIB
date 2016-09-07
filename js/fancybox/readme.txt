@@ -1,0 +1,1 @@
+http://fancybox.net/howto

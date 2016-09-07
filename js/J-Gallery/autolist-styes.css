@@ -1,0 +1,11 @@
+.main_view {position:relative;}
+.main_view .listener {position:relative; top:50px; height:200px; width:500px; overflow: hidden;}
+.main_view .listener .img_box {position:absolute; top:0; left:0;}
+.main_view .listener .img_box div {display:none; position:absolute; }
+.main_view .listener .img_box div img {border:none;}
+
+.main_view .listener .paging	{position:absolute; left:5px; bottom:6px; height:20px; z-index:10;}
+.main_view .listener .paging > div {float:left; width:20px; height:20px; margin-right:5px; border:1px solid red; background:white; cursor:pointer;}
+.main_view .listener .paging > div.active {background:red;}
+.main_view .listener .stop, .play {position:absolute; top:10px; left:10px; width:20px; height:20px; border:1px solid red; background:#fff; z-index:100; cursor:pointer;}
+.main_view .listener .play {background:red;}
